@@ -3,7 +3,7 @@ set -ex
 
 #Install Pre-req
 apt-get update
-apt-get install rubygems
+apt-get install rubygems -y
 
 gem install fpm
 export DIR=${PWD}
