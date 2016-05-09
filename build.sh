@@ -17,7 +17,7 @@ wget http://download.zeromq.org/zeromq-4.1.4.tar.gz
 tar xf zeromq-4.1.4.tar.gz
 cd zero*
 
-./autogen.sh && ./configure --without-libsodium --enable-static --disable-shared --prefix=${PWD}/../../output/usr/ && make -j4
+./autogen.sh && ./configure --without-libsodium --enable-static --prefix=${PWD}/../../output/usr/ && make -j4
 make install && sudo ldconfig
 
 cd ..
